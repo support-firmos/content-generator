@@ -16,6 +16,7 @@ import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts'
 
+
 type Topic = {
   title: string;
   status: string;
@@ -247,7 +248,7 @@ function ContentIdeaSection({ setGeneratedContent, setActiveSection, setCustomer
   const [isLoading, setIsLoading] = useState(false)
   const [successMessage, setSuccessMessage] = useState("")
   const [showSuccessModal, setShowSuccessModal] = useState(false)
-
+  
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
     setIsLoading(true)
@@ -261,10 +262,30 @@ function ContentIdeaSection({ setGeneratedContent, setActiveSection, setCustomer
       createdAt: new Date().toISOString(),
       topics: [
         {
-          title: `${contentIdea}: An Overview`,
+          title: "Maximizing Efficiency with Airtable and Document Automation",
           status: "For Review",
           dateCreated: new Date().toISOString(),
-          script: "This is an overview of the new content idea. The full content will be generated and added here."
+          script: "In today's fast-paced business world, maximizing efficiency with tools like Airtable and integrating document automation can significantly enhance productivity. As technology solutions professionals, how can leveraging these innovations drive American business solutions forward and support our day-to-day operations?\n\n 📌STREAMLINED WORKFLOWS\n Imagine having complex data sets managed seamlessly. Airtable provides innovative management solutions for organizing data, automating workflows, and reducing manual tasks. How often do you find yourself bogged down by repetitive tasks that could be automated?\n\n 📊INTEGRATED DATA SOLUTIONS\n Through integrated data solutions, Airtable can pull together different data streams into one coherent system. This not only simplifies data management but also boosts real-time collaboration. For instance, have you ever experienced delays simply because teams are using different data sources?",
+          carouselContent: [
+            "/images/airtable1.jfif",
+            "/images/airtable2.jfif",
+            "/images/airtable3.jfif",
+            "/images/airtable4.jfif",
+            "/images/airtable5.jfif",
+            "/images/airtable6.jfif"
+          ],
+        },
+        {
+          title: "Simplifying Document Creation with Airtable Automation",
+          status: "For Review",
+          dateCreated: new Date().toISOString(),
+          script: "Simplifying the process of document creation can significantly enhance productivity for companies utilizing technology solutions professional services. Airtable automation offers an innovative management solutions approach to streamline workflows, ensuring proper management of tasks and projects. Here's how you can leverage Airtable to make your document creation process more efficient: \n\n\n📄 DOCUMENT TEMPLATES \n\nBy setting up specific templates for recurring documents, you can save valuable time and ensure consistency. Have you ever thought about how much time you spend recreating similar documents? Templates can be particularly useful in compliance management systems, where standardization is key.",
+        },
+        {
+          title: "Collaboration Made Easy: Switch Seamlessly with Airtable",
+          status: "For Review",
+          dateCreated: new Date().toISOString(),
+          script: "Understanding the power of variables in Airtable document automation can truly transform your approach to data management and workflow efficiency. By leveraging the right techniques, you can streamline processes and achieve significant improvements in accuracy and productivity.\n\n\n📊 VALIDATED DATA\n\nEnsuring that your data is accurate and validated is crucial for any automation logic to work effectively. How often do you encounter incorrect data that disrupts your workflows? Using validated data ensures reliability and efficiency in every automation step.",
         }
       ]
     }
@@ -636,6 +657,7 @@ function AnalyticsSection({ generatedContent, selectedDate, setSelectedDate }: {
   )
 }
 
+
 function TopicDetailModal({ topic, onClose, isEditing, setIsEditing, isScheduling, setIsScheduling, isPosting, setIsPosting, isRejecting, setIsRejecting, date, setDate, setGeneratedContent, customerName }: {
   topic: Topic;
   onClose: () => void;
@@ -758,17 +780,13 @@ function TopicDetailModal({ topic, onClose, isEditing, setIsEditing, isSchedulin
             {topic.carouselContent && topic.carouselContent.length > 0 && (
               <div>
                 <Label>Carousel Content</Label>
-                <Carousel className="mt-2">
-                  <CarouselContent>
-                    {topic.carouselContent.map((item: string, index: number) => (
-                      <CarouselItem key={index}>
-                        <img src={item} alt={`Carousel item ${index + 1}`} className="w-full h-auto" />
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
-                </Carousel>
+                <div className="grid grid-cols-3 gap-4 mt-2">
+                  {topic.carouselContent.map((item: string, index: number) => (
+                    <div key={index} className="aspect-square overflow-hidden rounded-md">
+                      <img src={item} alt={`Carousel item ${index + 1}`} className="w-full h-full object-cover" />
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
