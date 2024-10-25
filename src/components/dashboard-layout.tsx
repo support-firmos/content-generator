@@ -15,7 +15,7 @@ import { Calendar as CalendarComponent } from "@/components/ui/calendar"
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts'
-
+import React from 'react'
 
 type Topic = {
   title: string;
@@ -54,66 +54,72 @@ const customers = [
 const dummyContent = {
   "PORTICUS MARKETPLACE INC.": [
     {
-      title: "E-commerce Trends 2024",
+      title: "Process Automation for Accounting Services",
       createdAt: "2024-01-15T10:30:00Z",
       topics: [
         {
-          title: "The Rise of Social Commerce",
+          title: "Improving Cash Flow by Automating Payment Reminders",
           status: "For Review",
           dateCreated: "2024-01-16T09:00:00Z",
-          script: "Social commerce is revolutionizing online shopping..."
+          script: "Improving cash flow is crucial for any business. One effective way to achieve this is by automating payment reminders. With innovative management solutions and the integration of payment software engineering, your company can enhance its cash flow without the constant manual oversight. How can this automation be advantageous to your business? Let’s delve into some strategies that can make a difference.\n\n 💡 AUTOMATION IMPACT\n Implementing a system that automates payment reminders can drastically improve efficiency. For instance, embracing operations software can ensure timely follow-ups with clients. Have you ever considered how much time your team spends manually tracking overdue payments?\n\n 🔄 STRATEGIC INNOVATION \nProper management through strategic innovation not only improves processes but also fosters client retention. Utilizing a central management console allows for streamlined operations. What innovative steps are you currently taking to manage payment reminders?\n\n 💻 PAYMENT TECHNOLOGIES\n Adopting payment software like Stripe can simplify the invoice process. This not only alleviates administrative burdens but also reduces accounting errors. Imagine the reduction in labor management system costs with such efficiencies."
         },
         {
-          title: "AI-Powered Personalization in E-commerce",
+          title: "Benefits of Automating Accounting Processes for Small Businesses",
           status: "Scheduled",
           scheduledDate: "2024-02-01T10:00:00Z",
-          script: "AI is transforming the way e-commerce platforms personalize..."
+          script: "In today's fast-paced business environment, small businesses are constantly seeking innovative management solutions to improve efficiency and accuracy. Automating accounting processes is not just about saving time—it's about leveraging payment software engineering to streamline operations. Our company specializes in providing American business solutions that adapt to the unique needs of small businesses. But how can automation truly benefit your organization?\n\n 🔍 INCREASED ACCURACY \n Automation minimizes human error by ensuring consistency across all financial records. Have you ever had those moments where manual errors led to costly mistakes? With tools like Wave Accounting, businesses can ensure double-entry accounting is precisely managed. This leads to more accurate financial statements and a clearer understanding of risk-weighted assets. \n\n ⏱️ TIME SAVINGS \n Automation liberates small businesses by reducing the time spent on repetitive tasks. Consider how many business hours in a year employees spend on manual accounting. Imagine reallocating that time towards strategic operations or enhancing collaborative decision-making processes. This shift not only boosts efficiency but also employee satisfaction."
         },
         {
-          title: "Sustainable E-commerce Practices",
+          title: "Enhancing Efficiency with Automated Accounts Payable",
           status: "Posted",
           postedDate: "2024-01-20T14:30:00Z",
-          script: "Consumers are increasingly demanding sustainable practices..."
+          script: "Enhancing efficiency in accounting operations has become crucial for businesses aiming to stay competitive. In today's fast-paced environment, Automated Accounts Payable solutions are increasingly becoming the cornerstone of prosperity management and proper management. Here's how this transformative technology impacts various aspects of compliance and financial operations: \n\n 🔍 COMPLIANCE MANAGEMENT SYSTEM \n An effective compliance management system integrates seamlessly with automated accounts payable to ensure every transaction adheres to organizational and regulatory obligations. Do you have a system in place that can identify and mitigate compliance risks automatically?\n\n 🔑 PAYMENT SOFTWARE ENGINEERING \n The integration of advanced payment software engineering within accounts payable automation simplifies complex payment processes. For instance, by leveraging solutions such as Stripe and Square Invoices, companies can streamline transactions. How efficient are your current payment processes?"
         }
       ]
     }
   ],
   "Acme Corp": [
     {
-      title: "Innovation in Manufacturing",
+      title: "Automation agencies for accounting firms are revolutionizing the industry",
       createdAt: "2024-01-17T14:45:00Z",
       topics: [
         {
-          title: "3D Printing Revolution",
+          title: "The role of automation agencies in streamlining financial management for accounting firms",
           status: "For Review",
           dateCreated: "2024-01-18T11:00:00Z",
-          script: "3D printing is reshaping the manufacturing landscape..."
+          script: "Exploring the transformative power of automation agencies in financial management brings to light new opportunities for accounting firms striving for efficiency. This integration not only reshapes processes but also aligns with our company's dedication to innovation.\n\n 🔄 EFFICIENCY ENHANCEMENT \n Automation agencies streamline repetitive tasks, allowing firms to optimize resources. By automating processes tied to the accounting equation and financial accounting hub, companies can reduce manual errors. Have you considered how automation might transform market-to-market accounting processes for your firm?\n\n 💡 STRATEGIC RESOURCE ALLOCATION  \n With the growing complexity of financial statements, accounting firms need effective solutions that agencies of record provide. Automation enables precise tracking of assets and liabilities in accounting, freeing up valuable time for strategic planning. What tasks would your team prioritize if given more time through automation?"
         },
         {
-          title: "IoT in Smart Factories",
+          title: "How automation agencies are changing the landscape of the accounting industry",
+          status: "For Review",
+          dateCreated: "2024-01-19T10:30:00Z",
+          script: "Automation agencies are rapidly reshaping the accounting industry, driving significant transformation and innovation. At the heart of these changes is the ability to integrate technologies that streamline operations and enhance financial transparency. How exactly does this impact companies like ours? Let's dive into the key ways automation is revolutionizing accounting.\n\n 🔍 INNOVATIVE MANAGEMENT SOLUTIONS \n The rise of innovative management solutions is changing how accounting processes are handled. By integrating automation with accounting by Wave, businesses can streamline invoicing and financial reporting. Have you considered how much time your team could save with a system that simplifies double entry accounting?\n\n 👥 STRATEGIC INNOVATION GROUPS \n Strategic innovation groups are pushing companies to rethink their financial strategies. They help businesses adopt tools that improve accuracy and efficiency, similar to those offered by defense finance and accounting services. What if your financial analyst could leverage automation to predict future trends more accurately?"
+        },
+        {
+          title: "How automation agencies are changing the landscape of the accounting industry",
           status: "Viewed",
           dateCreated: "2024-01-19T10:30:00Z",
-          script: "The Internet of Things is enabling smarter, more efficient factories..."
+          script: "Automation agencies are rapidly reshaping the accounting industry, driving significant transformation and innovation. At the heart of these changes is the ability to integrate technologies that streamline operations and enhance financial transparency. How exactly does this impact companies like ours? Let's dive into the key ways automation is revolutionizing accounting. \n\n 🔍 INNOVATIVE MANAGEMENT SOLUTIONS\n The rise of innovative management solutions is changing how accounting processes are handled. By integrating automation with accounting by Wave, businesses can streamline invoicing and financial reporting. Have you considered how much time your team could save with a system that simplifies double entry accounting?\n\n 👥 STRATEGIC INNOVATION GROUPS \n Strategic innovation groups are pushing companies to rethink their financial strategies. They help businesses adopt tools that improve accuracy and efficiency, similar to those offered by defense finance and accounting services. What if your financial analyst could leverage automation to predict future trends more accurately?"
         }
       ]
     }
   ],
   "TechNova Solutions": [
     {
-      title: "Cybersecurity Best Practices",
+      title: "Utilizing Airtable for Content Automation",
       createdAt: "2024-01-20T09:15:00Z",
       topics: [
         {
-          title: "Zero Trust Security Model",
+          title: "Maximizing Business Efficiency: The Role of Airtable in Content Automation",
           status: "For Review",
           dateCreated: "2024-01-21T08:00:00Z",
-          script: "The Zero Trust model is becoming essential in modern cybersecurity..."
+          script: "Maximizing Business Efficiency: The Role of Airtable in Content Automation is crucial for staying ahead in today's fast-paced environment. As businesses like ours strive for innovative management solutions, understanding content automation becomes a key driver for growth."
         },
         {
-          title: "AI in Threat Detection",
+          title: "Unleashing the Full Potential of Your Business: Understanding Airtable and Content Automation",
           status: "Scheduled",
           scheduledDate: "2024-02-05T13:00:00Z",
-          script: "Artificial Intelligence is revolutionizing how we detect and respond to cyber threats..."
+          script: "Understanding how to harness tools like Airtable and content automation can significantly drive business growth and transform daily operations. In today's fast-paced digital landscape, automating processes is no longer a luxury but a necessity for businesses aiming to stay competitive. How can your business leverage automation to enhance efficiency and boost productivity?"
         }
       ]
     }
@@ -250,21 +256,93 @@ function ContentIdeaSection({ setGeneratedContent, setActiveSection, setCustomer
   const [showSuccessModal, setShowSuccessModal] = useState(false)
   
   const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault()
-    setIsLoading(true)
-    setSuccessMessage("")
-
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000))
-
-    const newContent = {
-      title: contentIdea,
-      createdAt: new Date().toISOString(),
-      topics: [
+    event.preventDefault();
+    setIsLoading(true);
+    setSuccessMessage("");
+  
+    // Simulate API call delay
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+  
+    // Define topic templates for specific content ideas
+    const topicTemplateMap: { [key: string]: { title: string; script: string; carouselContent?: string[] }[] } = {
+      "Automated Expense Report Processing": [
+        {
+          title: "How Automation in Expense Reporting Can Benefit Your Business",
+          script: "In today's fast-paced business environment, automation in expense reporting is more crucial than ever for enhancing efficiency and accuracy. This shift not only streamlines processes but also impacts essential functions within a company. Let's explore how embracing automation can significantly benefit your organization.\n\n 📊 PROCESS IMPROVEMENT \n Automation logic in expense reporting leads to seamless process flow, reducing manual intervention and errors. Have you ever considered how much time your team spends on repetitive tasks? Integrating an automated process can free up valuable resources, allowing your team to focus on strategic projects rather than tedious administrative work.\n\n 🕒 TIME SAVINGS \n Automated expense reporting tools like Turbotax Business for Mac save hours of manual data entry, increasing productivity. Employees can submit expenses in real-time, and managers can approve them with ease. Isn't it time you shifted focus from process management to business growth? These systems can transform how you manage financial operations.\n\n 📈 FINANCIAL ACCURACY \n With advanced systems in place, like payment management systems, error rates in financial report samples decrease. Accurate data is crucial for financial auditors, especially when analyzing the three financial statements. How does your current setup handle discrepancies in financial accounting vs managerial accounting? Enhanced accuracy not only ensures compliance but also helps in strategic decision-making.",
+          carouselContent: [
+            "/images/airtable71.1.jfif",
+            "/images/airtable71.2.jfif",
+            "/images/airtable71.3.jfif",
+            "/images/airtable71.4.jfif",
+            "/images/airtable71.5.jfif",
+            "/images/airtable71.6.jfif"
+          ]
+        },
+        {
+          title: "Revolutionize Your Expense Management with Automated Processing",
+          script: "Transform how you handle expenses with our innovative automated processing solutions. Navigating the complexities of modern-day expense management can be a challenge, but with the right tools, it becomes much easier. By incorporating advanced systems and strategies, your company can streamline processes and drive prosperity.\n\n 📊 COMPLIANCE MANAGEMENT SYSTEMS\n Maintaining regulations is key. Are you confident that your existing compliance system effectively manages your company's policies? Our solutions integrate seamlessly with compliance management systems to avoid regulatory pitfalls, ensuring proper management without the extra hassle. \n\n 💡 INNOVATIVE PAYMENT SOLUTIONS \n In today's fast-paced world, efficient financial transactions are crucial. Does your current payment software support all your operational needs? Our solutions, equipped with retail price management and payments software engineering, enhance the speed and accuracy of transactions, giving you more control over financial processes.",
+          carouselContent: [
+            "/images/airtable72.1.jfif",
+            "/images/airtable72.2.jfif",
+            "/images/airtable72.3.jfif",
+            "/images/airtable72.4.jfif",
+            "/images/airtable72.5.jfif"
+          ]
+        },
+        {
+          title: "The Future of Business: Automated Expense Report Processing",
+          script: "In the fast-paced world of business, finding efficient ways to handle tasks can be the difference between success and stagnation. Automated expense report processing is revolutionizing how companies manage their finances. What possibilities does this hold for future business operations and compliance management systems?\n\n 📈 AUTOMATED EFFICIENCY \n Automation in expense processing reduces labor-intensive tasks, boosting productivity. Imagine the time employees could save with automatic data processing. Could this also lead to better labor management systems? Efficiency here means more focus on strategic tasks rather than mundane processes.\n\n 🔐 ENHANCED ACCURACY \n Automating expense reports ensures precision in financial documentation. Errors in manual entry can affect the prosperity management of any organization. Is your company's compliance stringent enough to prevent discrepancies that an automated system could easily handle?",
+          carouselContent: [
+            "/images/airtable73.1.jfif",
+            "/images/airtable73.2.jfif",
+            "/images/airtable73.3.jfif",
+            "/images/airtable73.4.jfif",
+            "/images/airtable73.5.jfif",
+            "/images/airtable73.6.jfif"
+          ]
+        },
+      ],
+      "Content Automation": [
+        {
+          title: "The Role of Content Automation in Modern Marketing: Exploring Its Benefits and Implementation Strategies",
+          script: "Content automation has become a significant asset in modern marketing, offering numerous benefits and transforming strategies for companies like FirmOS. As marketing evolves, it's crucial to explore how automation can revolutionize the way we tackle content creation and distribution.\n\n 🔗 SCALABILITY AND EFFICIENCY\n Content automation allows marketing strategist teams to scale their content efforts efficiently. How can businesses manage extensive marketing campaigns without delaying content delivery? By automating repetitive tasks, teams can focus on more strategic initiatives, ensuring timely content delivery. This becomes especially effective for international marketing groups handling diverse audiences.\n\n ✈️ IMPROVED TARGETING\n With tools like automated SEO and marketing intelligence, marketers can deliver personalized content effortlessly. Has your team struggled to tailor messages for specific audience segments? Automation helps by using data-driven insights to craft targeted campaigns that resonate with different demographics, enhancing engagement and effectiveness.",
+          carouselContent: [
+            "/images/airtable1.1.jfif",
+            "/images/airtable1.2.jfif",
+            "/images/airtable1.3.jfif",
+            "/images/airtable1.4.jfif",
+            "/images/airtable1.5.jfif",
+            "/images/airtable1.6.jfif"
+          ]
+        },
+        {
+          title: "How Content Automation Can Help Your Business Scale Without Extra Resources",
+          script: "In today's fast-paced business environment, scaling efficiently can be a challenge. However, with advances in content automation, businesses can achieve growth without needing extra resources. At FirmOS, we understand how crucial it is to stay ahead. Here's how content automation can play a vital role.\n\n 🚀 EFFICIENCY AND PRODUCTIVITY \n Content automation streamlines repetitive tasks, freeing up valuable time for your team. Did you know that tools like automation studio and real-time automation can handle routine content updates and posts? Imagine reallocating the time spent on these tasks to strategic initiatives.\n\n 🧭 IMPROVED ACCURACY\n Automation reduces the risk of human error. Have you ever experienced inconsistencies in your information management system? Automated processes ensure that each output is consistent and error-free, enhancing your brand’s reliability.",
+          carouselContent: [
+            "/images/airtable2.1.jfif",
+            "/images/airtable2.2.jfif",
+            "/images/airtable2.3.jfif",
+            "/images/airtable2.4.jfif",
+            "/images/airtable2.5.jfif",
+            "/images/airtable2.6.jfif"
+          ]
+        },
+        {
+          title: "Top Tools and Technologies for Effective Content Automation",
+          script: "Discover best practices for implementing content automation in your organization to achieve effective and scalable results.",
+          carouselContent: [
+            "/images/airtable3.1.jfif",
+            "/images/airtable3.2.jfif",
+            "/images/airtable3.3.jfif",
+            "/images/airtable3.4.jfif",
+            "/images/airtable3.5.jfif",
+            "/images/airtable3.6.jfif"
+          ]
+        },
+      ],
+      "Why Airtable is great at automating simple documents": [
         {
           title: "Maximizing Efficiency with Airtable and Document Automation",
-          status: "For Review",
-          dateCreated: new Date().toISOString(),
           script: "In today's fast-paced business world, maximizing efficiency with tools like Airtable and integrating document automation can significantly enhance productivity. As technology solutions professionals, how can leveraging these innovations drive American business solutions forward and support our day-to-day operations?\n\n 📌STREAMLINED WORKFLOWS\n Imagine having complex data sets managed seamlessly. Airtable provides innovative management solutions for organizing data, automating workflows, and reducing manual tasks. How often do you find yourself bogged down by repetitive tasks that could be automated?\n\n 📊INTEGRATED DATA SOLUTIONS\n Through integrated data solutions, Airtable can pull together different data streams into one coherent system. This not only simplifies data management but also boosts real-time collaboration. For instance, have you ever experienced delays simply because teams are using different data sources?",
           carouselContent: [
             "/images/airtable1.jfif",
@@ -273,22 +351,65 @@ function ContentIdeaSection({ setGeneratedContent, setActiveSection, setCustomer
             "/images/airtable4.jfif",
             "/images/airtable5.jfif",
             "/images/airtable6.jfif"
-          ],
+          ]
         },
         {
           title: "Simplifying Document Creation with Airtable Automation",
-          status: "For Review",
-          dateCreated: new Date().toISOString(),
           script: "Simplifying the process of document creation can significantly enhance productivity for companies utilizing technology solutions professional services. Airtable automation offers an innovative management solutions approach to streamline workflows, ensuring proper management of tasks and projects. Here's how you can leverage Airtable to make your document creation process more efficient: \n\n\n📄 DOCUMENT TEMPLATES \n\nBy setting up specific templates for recurring documents, you can save valuable time and ensure consistency. Have you ever thought about how much time you spend recreating similar documents? Templates can be particularly useful in compliance management systems, where standardization is key.",
+          carouselContent: [
+            "/images/airtable8.1.jfif",
+            "/images/airtable8.2.jfif",
+            "/images/airtable8.3.jfif",
+            "/images/airtable8.4.jfif"
+          ]
         },
         {
-          title: "Collaboration Made Easy: Switch Seamlessly with Airtable",
-          status: "For Review",
-          dateCreated: new Date().toISOString(),
-          script: "Understanding the power of variables in Airtable document automation can truly transform your approach to data management and workflow efficiency. By leveraging the right techniques, you can streamline processes and achieve significant improvements in accuracy and productivity.\n\n\n📊 VALIDATED DATA\n\nEnsuring that your data is accurate and validated is crucial for any automation logic to work effectively. How often do you encounter incorrect data that disrupts your workflows? Using validated data ensures reliability and efficiency in every automation step.",
-        }
-      ]
-    }
+          title: "A Step-by-Step Guide to Creating Automated Documents in Airtable",
+          script: "The rise of automation has paved the way for businesses to streamline their processes, save time, and reduce errors. Our company recognizes the importance of leveraging tools like Airtable for automating documents, which is an integral part of modern business operations.\n\n 📊 AUTOMATED PROCESS\n Setting up an automated process in Airtable involves configuring workflows, defining triggers, and setting action steps. Have you ever experienced inefficiencies due to manual processes? Let Airtable manage tasks such as sending onboarding documents and product requirements document examples automatically.\n\n 📃 DESIGN DOCUMENT TEMPLATE\n A well-structured design document template can improve project integration management. For instance, you can automate the populating of fields within a design document, which ensures consistency and accuracy in every project.",
+          carouselContent: [
+            "/images/airtable9.1.jfif",
+            "/images/airtable9.2.jfif",
+            "/images/airtable9.3.jfif",
+            "/images/airtable9.4.jfif",
+            "/images/airtable9.5.jfif",
+            "/images/airtable9.6.jfif"
+          ]
+        },
+      ],
+      // Add more content ideas and their respective templates here as needed.
+    };
+  
+    // Determine the appropriate templates based on content idea
+    const templates = topicTemplateMap[contentIdea] || [
+      {
+        title: `Exploring the Benefits of ${contentIdea}`,
+        script: `In this topic, we discuss the key benefits of ${contentIdea} for your business.`,
+      },
+      {
+        title: `How ${contentIdea} Can Transform Your Business`,
+        script: `Learn how ${contentIdea} can be used to bring positive changes to your organization.`,
+      },
+      {
+        title: `The Future of ${contentIdea}`,
+        script: `An overview of the potential future developments and trends related to ${contentIdea}.`,
+      },
+    ];
+  
+    // Generate unique topics for the content idea
+    const newTopics = templates.map((template) => ({
+      title: template.title,
+      status: "For Review",
+      dateCreated: new Date().toISOString(),
+      script: template.script,
+      carouselContent: template.carouselContent
+    }));
+  
+    // Add the new content idea with the generated unique topics
+    const newContent = {
+      title: contentIdea,
+      createdAt: new Date().toISOString(),
+      topics: newTopics,
+    };
 
     setGeneratedContent(prevContent => ({
       ...prevContent,
@@ -399,7 +520,9 @@ function GeneratedContentSection({ generatedContent, onTopicClick }: {
       {sortedContent.map((content, index) => (
         <Card key={index}>
           <CardHeader>
-            <CardTitle>{content.title}</CardTitle>
+            <CardTitle className="break-words whitespace-normal">
+              {content.title}
+            </CardTitle>
             <CardDescription className="flex items-center text-sm text-muted-foreground">
               <Calendar className="mr-2 h-4 w-4" />
               Created on: {new Date(content.createdAt).toLocaleDateString()}
@@ -407,40 +530,48 @@ function GeneratedContentSection({ generatedContent, onTopicClick }: {
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-4">
-              <div>
-                <h3 className="font-semibold mb-2">For Review</h3>
-                <ul className="space-y-2">
-                  {content.topics.filter(topic => topic.status === "For Review").map((topic, topicIndex) => (
-                    <li key={topicIndex} className="flex items-center justify-between">
-                      <Button
-                        variant="link"
-                        className="p-0 h-auto text-left"
-                        onClick={() => onTopicClick(topic)}
-                      >
-                        {topic.title}
-                      </Button>
-                      <StatusBadge status={topic.status} />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">Other Statuses</h3>
-                <ul className="space-y-2">
-                  {content.topics.filter(topic  => topic.status !== "For Review").map((topic, topicIndex) => (
-                    <li key={topicIndex} className="flex items-center justify-between">
-                      <Button
-                        variant="link"
-                        className="p-0 h-auto text-left"
-                        onClick={() => onTopicClick(topic)}
-                      >
-                        {topic.title}
-                      </Button>
-                      <StatusBadge status={topic.status} date={topic.scheduledDate || topic.postedDate} />
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">For Review</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {content.topics.filter(topic => topic.status === "For Review").map((topic, topicIndex) => (
+                      <li key={topicIndex} className="flex items-center justify-between">
+                        <Button
+                          variant="link"
+                          className="p-0 h-auto text-left break-words whitespace-normal"
+                          onClick={() => onTopicClick(topic)}
+                        >
+                          <span className="line-clamp-2">{topic.title}</span>
+                        </Button>
+                        <StatusBadge status={topic.status} />
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Other Statuses</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {content.topics.filter(topic => topic.status !== "For Review").map((topic, topicIndex) => (
+                      <li key={topicIndex} className="flex items-center justify-between">
+                        <Button
+                          variant="link"
+                          className="p-0 h-auto text-left break-words whitespace-normal"
+                          onClick={() => onTopicClick(topic)}
+                        >
+                          <span className="line-clamp-2">{topic.title}</span>
+                        </Button>
+                        <StatusBadge status={topic.status} date={topic.scheduledDate || topic.postedDate} />
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </CardContent>
         </Card>
@@ -448,6 +579,7 @@ function GeneratedContentSection({ generatedContent, onTopicClick }: {
     </div>
   )
 }
+
 
 function StatusBadge({ status, date }: { status: string; date?: string }) {
   let badgeColor = "bg-gray-500"
@@ -485,7 +617,7 @@ function AnalyticsSection({ generatedContent, selectedDate, setSelectedDate }: {
   generatedContent: ContentItem[];
   selectedDate: Date | null;
   setSelectedDate: (date: Date | null) => void;
-}) {
+}): React.ReactElement {
   const [metrics, setMetrics] = useState<MetricsType>({
     'For Review': 0,
     'Viewed': 0,
@@ -575,7 +707,7 @@ function AnalyticsSection({ generatedContent, selectedDate, setSelectedDate }: {
                   outerRadius={80}
                   fill="#8884d8"
                   dataKey="value"
-                  label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                  label={({ name, percent }: { name: string; percent: number }) => `${name} ${(percent * 100).toFixed(0)}%`}
                 >
                   {pieChartData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -610,23 +742,23 @@ function AnalyticsSection({ generatedContent, selectedDate, setSelectedDate }: {
         </Card>
       </div>
       <div className="grid md:grid-cols-2 gap-6">
-        <Card>
+        <Card className="flex flex-col">
           <CardHeader>
             <CardTitle>Content Calendar</CardTitle>
           </CardHeader>
-          <CardContent>
-            <CalendarComponent
-              mode="single"
-              selected={selectedDate || undefined}
-              onSelect={(date: Date | undefined) => setSelectedDate(date || null)}
-              className="rounded-md border"
-              modifiers={{
-                hasActivity: postedDates
-              }}
-              modifiersStyles={{
-                hasActivity: { backgroundColor: 'red', color: 'white', borderRadius: '50%' }
-              }}
-            />
+          <CardContent className="flex-grow p-0">
+            <div className="h-full">
+              <CalendarComponent
+                mode="single"
+                selected={selectedDate || undefined}
+                onSelect={(date: Date | undefined) => setSelectedDate(date || null)}
+                className="w-full h-full"
+                modifiers={{ hasActivity: postedDates }}
+                modifiersStyles={{
+                  hasActivity: { backgroundColor: 'red', color: 'white', borderRadius: '50%' }
+                }}
+              />
+            </div>
           </CardContent>
         </Card>
         <Card>
