@@ -61,19 +61,44 @@ const dummyContent = {
           title: "Improving Cash Flow by Automating Payment Reminders",
           status: "For Review",
           dateCreated: "2024-01-16T09:00:00Z",
-          script: "Improving cash flow is crucial for any business. One effective way to achieve this is by automating payment reminders. With innovative management solutions and the integration of payment software engineering, your company can enhance its cash flow without the constant manual oversight. How can this automation be advantageous to your business? Let’s delve into some strategies that can make a difference.\n\n 💡 AUTOMATION IMPACT\n Implementing a system that automates payment reminders can drastically improve efficiency. For instance, embracing operations software can ensure timely follow-ups with clients. Have you ever considered how much time your team spends manually tracking overdue payments?\n\n 🔄 STRATEGIC INNOVATION \nProper management through strategic innovation not only improves processes but also fosters client retention. Utilizing a central management console allows for streamlined operations. What innovative steps are you currently taking to manage payment reminders?\n\n 💻 PAYMENT TECHNOLOGIES\n Adopting payment software like Stripe can simplify the invoice process. This not only alleviates administrative burdens but also reduces accounting errors. Imagine the reduction in labor management system costs with such efficiencies."
+          script: "Improving cash flow is crucial for any business. One effective way to achieve this is by automating payment reminders. With innovative management solutions and the integration of payment software engineering, your company can enhance its cash flow without the constant manual oversight. How can this automation be advantageous to your business? Let’s delve into some strategies that can make a difference.\n\n 💡 AUTOMATION IMPACT\n Implementing a system that automates payment reminders can drastically improve efficiency. For instance, embracing operations software can ensure timely follow-ups with clients. Have you ever considered how much time your team spends manually tracking overdue payments?\n\n 🔄 STRATEGIC INNOVATION \nProper management through strategic innovation not only improves processes but also fosters client retention. Utilizing a central management console allows for streamlined operations. What innovative steps are you currently taking to manage payment reminders?\n\n 💻 PAYMENT TECHNOLOGIES\n Adopting payment software like Stripe can simplify the invoice process. This not only alleviates administrative burdens but also reduces accounting errors. Imagine the reduction in labor management system costs with such efficiencies.",
+          carouselContent: [
+            "/images/32.1.jfif",
+            "/images/32.2.jfif",
+            "/images/32.3.jfif",
+            "/images/32.4.jfif",
+            "/images/32.5.jfif",
+            "/images/32.6.jfif"
+          ]
         },
         {
           title: "Benefits of Automating Accounting Processes for Small Businesses",
+          dateCreated: "2024-01-16T09:00:00Z",
           status: "Scheduled",
           scheduledDate: "2024-02-01T10:00:00Z",
-          script: "In today's fast-paced business environment, small businesses are constantly seeking innovative management solutions to improve efficiency and accuracy. Automating accounting processes is not just about saving time—it's about leveraging payment software engineering to streamline operations. Our company specializes in providing American business solutions that adapt to the unique needs of small businesses. But how can automation truly benefit your organization?\n\n 🔍 INCREASED ACCURACY \n Automation minimizes human error by ensuring consistency across all financial records. Have you ever had those moments where manual errors led to costly mistakes? With tools like Wave Accounting, businesses can ensure double-entry accounting is precisely managed. This leads to more accurate financial statements and a clearer understanding of risk-weighted assets. \n\n ⏱️ TIME SAVINGS \n Automation liberates small businesses by reducing the time spent on repetitive tasks. Consider how many business hours in a year employees spend on manual accounting. Imagine reallocating that time towards strategic operations or enhancing collaborative decision-making processes. This shift not only boosts efficiency but also employee satisfaction."
+          script: "In today's fast-paced business environment, small businesses are constantly seeking innovative management solutions to improve efficiency and accuracy. Automating accounting processes is not just about saving time—it's about leveraging payment software engineering to streamline operations. Our company specializes in providing American business solutions that adapt to the unique needs of small businesses. But how can automation truly benefit your organization?\n\n 🔍 INCREASED ACCURACY \n Automation minimizes human error by ensuring consistency across all financial records. Have you ever had those moments where manual errors led to costly mistakes? With tools like Wave Accounting, businesses can ensure double-entry accounting is precisely managed. This leads to more accurate financial statements and a clearer understanding of risk-weighted assets. \n\n ⏱️ TIME SAVINGS \n Automation liberates small businesses by reducing the time spent on repetitive tasks. Consider how many business hours in a year employees spend on manual accounting. Imagine reallocating that time towards strategic operations or enhancing collaborative decision-making processes. This shift not only boosts efficiency but also employee satisfaction.",
+          carouselContent: [
+            "/images/33.1.jfif",
+            "/images/33.2.jfif",
+            "/images/33.4.jfif",
+            "/images/33.5.jfif",
+            "/images/33.6.jfif"
+          ]
         },
         {
           title: "Enhancing Efficiency with Automated Accounts Payable",
+          dateCreated: "2024-01-16T09:00:00Z",
           status: "Posted",
           postedDate: "2024-01-20T14:30:00Z",
-          script: "Enhancing efficiency in accounting operations has become crucial for businesses aiming to stay competitive. In today's fast-paced environment, Automated Accounts Payable solutions are increasingly becoming the cornerstone of prosperity management and proper management. Here's how this transformative technology impacts various aspects of compliance and financial operations: \n\n 🔍 COMPLIANCE MANAGEMENT SYSTEM \n An effective compliance management system integrates seamlessly with automated accounts payable to ensure every transaction adheres to organizational and regulatory obligations. Do you have a system in place that can identify and mitigate compliance risks automatically?\n\n 🔑 PAYMENT SOFTWARE ENGINEERING \n The integration of advanced payment software engineering within accounts payable automation simplifies complex payment processes. For instance, by leveraging solutions such as Stripe and Square Invoices, companies can streamline transactions. How efficient are your current payment processes?"
+          script: "Enhancing efficiency in accounting operations has become crucial for businesses aiming to stay competitive. In today's fast-paced environment, Automated Accounts Payable solutions are increasingly becoming the cornerstone of prosperity management and proper management. Here's how this transformative technology impacts various aspects of compliance and financial operations: \n\n 🔍 COMPLIANCE MANAGEMENT SYSTEM \n An effective compliance management system integrates seamlessly with automated accounts payable to ensure every transaction adheres to organizational and regulatory obligations. Do you have a system in place that can identify and mitigate compliance risks automatically?\n\n 🔑 PAYMENT SOFTWARE ENGINEERING \n The integration of advanced payment software engineering within accounts payable automation simplifies complex payment processes. For instance, by leveraging solutions such as Stripe and Square Invoices, companies can streamline transactions. How efficient are your current payment processes?",
+          carouselContent: [
+            "/images/34.1.jfif",
+            "/images/34.2.jfif",
+            "/images/34.3.jfif",
+            "/images/34.4.jfif",
+            "/images/34.5.jfif",
+            "/images/34.6.jfif"
+          ]
         }
       ]
     }
@@ -384,14 +409,21 @@ function ContentIdeaSection({ setGeneratedContent, setActiveSection, setCustomer
       {
         title: `Exploring the Benefits of ${contentIdea}`,
         script: `In this topic, we discuss the key benefits of ${contentIdea} for your business.`,
+        carouselContent: [""
+        ]
       },
       {
         title: `How ${contentIdea} Can Transform Your Business`,
         script: `Learn how ${contentIdea} can be used to bring positive changes to your organization.`,
+        carouselContent: [""
+        ]
       },
       {
         title: `The Future of ${contentIdea}`,
         script: `An overview of the potential future developments and trends related to ${contentIdea}.`,
+        carouselContent: [
+          ""
+        ]
       },
     ];
   
@@ -887,15 +919,17 @@ function TopicDetailModal({ topic, onClose, isEditing, setIsEditing, isSchedulin
 
   return (
     <Dialog open={true} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[800px]">
-        <DialogHeader>
-          <DialogTitle>{topic.title}</DialogTitle>
-          <DialogDescription>
-            Created on: {new Date(topic.dateCreated).toLocaleDateString()}
-          </DialogDescription>
-        </DialogHeader>
-        <ScrollArea className="h-[60vh] mt-4">
-          <div className="space-y-4">
+      <DialogContent className="sm:max-w-[90vw] h-[90vh] flex flex-col p-0">
+        <div className="flex-shrink-0 p-6">
+          <DialogHeader>
+            <DialogTitle>{topic.title}</DialogTitle>
+            <DialogDescription>
+              Created on: {new Date(topic.dateCreated).toLocaleDateString()}
+            </DialogDescription>
+          </DialogHeader>
+        </div>
+        <ScrollArea className="flex-grow px-6">
+          <div className="space-y-4 pr-4">
             <div>
               <Label htmlFor="content-script">Content Script</Label>
               {isEditing ? (
@@ -903,16 +937,19 @@ function TopicDetailModal({ topic, onClose, isEditing, setIsEditing, isSchedulin
                   id="content-script"
                   value={editedScript}
                   onChange={(e) => setEditedScript(e.target.value)}
-                  className="mt-2"
+                  className="mt-2 w-full"
+                  rows={10}
                 />
               ) : (
-                <div className="mt-2 p-2 bg-muted rounded-md">{topic.script}</div>
+                <div className="mt-2 p-2 bg-muted rounded-md whitespace-pre-wrap break-words">
+                  {topic.script}
+                </div>
               )}
             </div>
             {topic.carouselContent && topic.carouselContent.length > 0 && (
               <div>
                 <Label>Carousel Content</Label>
-                <div className="grid grid-cols-3 gap-4 mt-2">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-2">
                   {topic.carouselContent.map((item: string, index: number) => (
                     <div key={index} className="aspect-square overflow-hidden rounded-md">
                       <img src={item} alt={`Carousel item ${index + 1}`} className="w-full h-full object-cover" />
@@ -923,7 +960,8 @@ function TopicDetailModal({ topic, onClose, isEditing, setIsEditing, isSchedulin
             )}
           </div>
         </ScrollArea>
-        <DialogFooter className="mt-6">
+        <div className="flex-shrink-0 p-6">
+          <DialogFooter>
           {isEditing ? (
             <Button onClick={handleSave} className="bg-green-500 hover:bg-green-600 text-white">
               Save Changes
@@ -947,6 +985,7 @@ function TopicDetailModal({ topic, onClose, isEditing, setIsEditing, isSchedulin
             Reject
           </Button>
         </DialogFooter>
+      </div>
       </DialogContent>
 
       {/* Schedule Post Modal */}
