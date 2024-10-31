@@ -408,22 +408,42 @@ function ContentIdeaSection({ setGeneratedContent, setActiveSection, setCustomer
     const templates = topicTemplateMap[contentIdea] || [
       {
         title: `Exploring the Benefits of ${contentIdea}`,
-        script: `In this topic, we discuss the key benefits of ${contentIdea} for your business.`,
-        carouselContent: [""
-        ]
+        script: `In this topic, we discuss the key benefits of ${contentIdea} for your business. Understanding these advantages can help you make informed decisions about implementing ${contentIdea} in your organization.
+
+1. Increased Efficiency: ${contentIdea} can streamline your processes, saving time and resources.
+2. Competitive Advantage: Adopting ${contentIdea} early can put you ahead of your competitors.
+3. Cost Savings: By optimizing operations, ${contentIdea} often leads to significant cost reductions.
+4. Enhanced Customer Experience: ${contentIdea} can improve how you interact with and serve your customers.
+5. Data-Driven Decision Making: ${contentIdea} often provides valuable insights for better business decisions.
+
+How could your business specifically benefit from implementing ${contentIdea}?`,
+        carouselContent: [""]
       },
       {
         title: `How ${contentIdea} Can Transform Your Business`,
-        script: `Learn how ${contentIdea} can be used to bring positive changes to your organization.`,
-        carouselContent: [""
-        ]
+        script: `Learn how ${contentIdea} can be used to bring positive changes to your organization. ${contentIdea} is not just a buzzword; it's a powerful tool that can revolutionize the way you do business.
+
+1. Process Optimization: ${contentIdea} can help streamline your workflows and eliminate inefficiencies.
+2. Innovation Catalyst: Implementing ${contentIdea} often leads to new ideas and approaches in your business.
+3. Scalability: ${contentIdea} can provide the foundation for growing your business more effectively.
+4. Employee Empowerment: With ${contentIdea}, your team can focus on more strategic, high-value tasks.
+5. Competitive Edge: Embracing ${contentIdea} can help you stay ahead in your industry.
+
+What aspects of your business do you think could be most transformed by ${contentIdea}?`,
+        carouselContent: [""]
       },
       {
         title: `The Future of ${contentIdea}`,
-        script: `An overview of the potential future developments and trends related to ${contentIdea}.`,
-        carouselContent: [
-          ""
-        ]
+        script: `An overview of the potential future developments and trends related to ${contentIdea}. As technology and business practices evolve, so too will the applications and impact of ${contentIdea}.
+
+1. Emerging Technologies: How will AI, blockchain, or IoT influence the future of ${contentIdea}?
+2. Industry Adoption: Which sectors are likely to see increased adoption of ${contentIdea} in the coming years?
+3. Regulatory Landscape: How might future regulations shape the use and implementation of ${contentIdea}?
+4. Integration with Other Systems: How will ${contentIdea} integrate with other business technologies and processes?
+5. Societal Impact: What broader effects might widespread adoption of ${contentIdea} have on society and the economy?
+
+How do you see ${contentIdea} evolving in your industry over the next 5-10 years?`,
+        carouselContent: [""]
       },
     ];
   
